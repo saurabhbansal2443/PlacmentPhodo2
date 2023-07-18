@@ -5,7 +5,7 @@ public class findInArray {
     public static void main(String[] args) {
         int[] arr = { 10, 20, 50, 30, 40, 60, 34, 89, 23 };
 
-            int k = 100;
+            int k = 8;
 
             int idx = -1;
 
