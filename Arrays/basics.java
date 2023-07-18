@@ -23,16 +23,18 @@ public static void main(String[] args) {
 
        // insert an element in array 
 
-    //    arr[0]=99;
-    //    arr[1]=56;
-    //    arr[2]=100;
-    //    arr[3]=78;
-    //    arr[4]=34;
+       int[] arr = new int[5];
+
+       arr[0]=99;
+       arr[1]=56;
+       arr[2]=100;
+       arr[3]=78;
+       arr[4]=34;
        //arr[5]=89; this will give error 
 
        // display an array 
 
-       int[] arr = new int[4];
+       arr[2]=999;
 
        for(int i=0;i<arr.length;i++){
            System.out.println(arr[i]);
@@ -42,6 +44,9 @@ public static void main(String[] args) {
     //    int[] arr = {1,2,3,4,45,7,5,4,2,4,9};
 
     //    System.out.println(arr.length-1);
+
+
+
 
 
     }
