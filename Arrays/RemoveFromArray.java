@@ -21,6 +21,7 @@ public class RemoveFromArray {
         }
 
         System.out.println(Arrays.toString(res));
+        
 
 
     }
