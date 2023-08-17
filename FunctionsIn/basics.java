@@ -6,11 +6,13 @@ public class basics {
 
         int ans = armStrong(n);
 
-        if (n == ans) {
-            System.out.println("True");
-        } else {
-            System.out.println("False");
-        }
+        // if (n == ans) {
+        //     System.out.println("True");
+        // } else {
+        //     System.out.println("False");
+        // }
+
+        System.out.println(max(3,4 ,8));
 
     }
 
@@ -27,5 +29,13 @@ public class basics {
 
         return sum;
 
+    }
+
+    public static  int max(int a , int b){
+        return Math.max(a,b);
+    }
+
+    public static int max(int a , int b , int c){
+        return Math.max(Math.max(a,b),c);
     }
 }
