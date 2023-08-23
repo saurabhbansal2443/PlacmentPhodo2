@@ -1,5 +1,4 @@
 package OOPs;
-
 public class inheritanceInJava {
     public static void main(String[] args) {
         smartphone s1 = new smartphone(10,20,30);
