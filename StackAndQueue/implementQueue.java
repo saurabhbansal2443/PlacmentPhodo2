@@ -10,14 +10,17 @@ public class implementQueue {
         que.add(40);
         que.add(50);
         
+        que.add(10);
+        que.add(20);
+        que.add(30);
+        que.add(40);
+        que.add(50);
+        
 
-        que.remove();
-
-        que.add(1000);
-
+        
         que.display();
    
-        System.out.println(que.top());
+       
 
 
     }
@@ -38,12 +41,31 @@ class myQueue{
         itr = 0 ;
     }
 
-    public void add (int ele){
+    // public void add (int ele){  // Normal Queue 
+    //     if(itr<arr.length){
+    //         arr[itr]=ele;
+    //         itr++;
+    //     }else{
+    //         System.out.println("Queue is full");
+    //     }
+    // }
+
+     public void add (int ele){  // Dynamic Queue 
         if(itr<arr.length){
             arr[itr]=ele;
             itr++;
         }else{
-            System.out.println("Queue is full");
+            int[] narr = new int[arr.length*2];
+
+            for(int i=0;i<arr.length;i++){
+                narr[i]=arr[i];
+            }
+
+            arr = narr ;
+
+            arr[itr]=ele;
+            itr++;
+
         }
     }
 
